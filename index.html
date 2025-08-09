@@ -13,31 +13,66 @@
         <header><h1>Dokumentation SoSe 2025</h1>
         </header>
 
-        <main>
+        <main><section id="teachable-machines" class="project-section">
+            <h2>1. Teachable Machines</h2>
+            <p>Die Google Teachable Machine ist ein kostenloses Tool, das es ermöglicht, „Machine Learning Models“ auch ohne Programmierkenntnisse zu nutzen. Man kann dem Computer Bilder, Töne oder Körperhaltungen „füttern“ und er lernt, diese zu unterscheiden.</p>
+                <p>Unsere Aufgabe war es, mithilfe dieses Tools eine interaktive Website zu erstellen. Ich entschied mich, die Bilderkennung zu nutzen, und entwickelte darauf basierend eine Art Choose Your Own Adventure. </p><p>Der/die Nutzer/in wird in eine Story einbezogen: Zeichnet ersie ein Kreuz, einen Kreis oder einen Stern auf die mit P5.js erstellte Canvas, wird eine entsprechende Reaktion ausgelöst – der zu bekämpfende Drache wird entweder getötet, verwandelt oder greift an.
+                Ich hätte die Seite gerne noch weiter ausgebaut, bin aber zufrieden damit, dass die Bilderkennung und die Reaktion auf das gezeichnete Bild reibungslos funktionieren
+                </p>
+            <img src="https://via.placeholder.com/400x200" alt="Placeholder image for Teachable Machines">
+            <p>The goal was to create an interactive experience powered by a custom-trained model.</p>
+            <a href="https://hbk-bs.github.io/teachable-machine-2mars01/">See the project...</a>
+        </section>
             <section id="nature-of-code" class="project-section">
-                <h2>1. Nature of Code</h2>
-                <p>This section explores concepts from "The Nature of Code," focusing on simulating natural systems. Topics include vectors, forces, particle systems, and autonomous agents. We'll look at how simple rules can lead to complex, emergent behavior.</p>
-                <a href="#">Read more...</a>
+                <h2>2. Nature of Code</h2>
+                <p>Inspiriert von Daniel Shiffmans "Nature of Code" und Beobachtungen von Wasserblasen in der Natur, simuliert mein p5.js-Projekt deren Verhalten. Jede Blase ist ein eigenständiges Objekt, das sich zu vordefinierten Cluster-Punkten bewegt. Wenn sich Blasen nahe kommen, verhindert eine Logik die Überlappung. Bleiben sie für eine per Timer festgelegte Dauer nahe beieinander, verschmelzen sie zu einer größeren Blase, um einen Ausgleich der Oberflächenspannung zu simulieren. Parameter wie die Erstellungsrate, der Verschmelz-Timer und die Deckkraft sind anpassbar und können zu interessanten, visuellen Ergebnissen führen. </p>
+              
+                <img src="https://hbk-bs.github.io/nature-of-code-2mars01/assets/bubbles1747229246677 1.png" alt="Blasenprojekt">
+                <a href="https://hbk-bs.github.io/nature-of-code-2mars01/">für mehr Kontext hier klicken</a>
             </section>
 
-            <section id="teachable-machines" class="project-section">
-                <h2>2. Teachable Machines</h2>
-                <p>Here, we dive into machine learning using Google's Teachable Machine. This tool allows for the creation of ML models directly in the browser without code. This project documents the process of training models for image, sound, and pose recognition.</p>
+            <section id="debate club" class="project-section">
+                <h2>3. Debate Club</h2>
+                <p>Als kleinen Diskurs hielten wir eine Pro-/Kontra-KI-Debatte. Ich war in der Kontra-Gruppe. Die Debatte war eine interessante Übung und hat meine Überzeugung gefestigt. Natürlich ist KI ein sehr hilfreiches Tool (siehe meine Projekte – der Copilot in VS Code war oft mein Retter) – aber vor allem im Kontext der Bildgenerierung empfinde ich KI oftmals als überflüssig und moralisch nicht ganz vertretbar.
+                    Die enorme Menge an Energie und Wasser, die benötigt wird, um ein einzelnes Bild zu generieren, ist für mich ein entscheidender Grund, KI in diesem Bereich nicht zu nutzen. <p>Ein weiterer Punkt ist das Urheberrecht: Bei vielen generierten Bildern und Texten werden reale Werke von Künstler*innen als Trainingsmaterial verwendet, ohne dass diese im Endprodukt erwähnt oder vergütet werden.
+                    Viele Unternehmen nutzen KI-generierte Bilder für ihre Werbung, da es günstiger ist, als Fotografinnen oder Grafikdesignerinnen zu beauftragen. Verständlich – aber wenn es auffällt, wirkt es oft nachlässig. Häufig werden nicht einmal offensichtliche Fehler wie zu viele Finger an einer Hand, Rechtschreibfehler oder falsche Informationen korrigiert.</p><p>
+                    Ein weiteres Gegenargument ist das sogenannte „Halluzinieren“ von Falschinformationen. KI neigt dazu, Informationen zu erfinden und sie als Fakten darzustellen. Man muss also nahezu alle Angaben erneut überprüfen. Außerdem können KI-generierte Inhalte sexistische, rassistische oder homophobe Vorurteile reproduzieren und verbreiten.</p>
+                   <p> Wer all diese Risiken in Kauf nimmt und KI trotzdem nutzen möchte, sollte sich ihrer bewusst sein und verantwortungsvoll damit umgehen.</p>
                 <img src="https://via.placeholder.com/400x200" alt="Placeholder image for Teachable Machines">
-                <p>The goal was to create an interactive experience powered by a custom-trained model.</p>
-                <a href="#">See the project...</a>
+               
+                
             </section>
 
             <section id="universal-interface" class="project-section">
-                <h2>3. Test Universal Interface</h2>
-                <p>This project is an experiment in creating a "universal" user interface. The goal is to design a single, adaptable interface that can control a wide variety of applications or devices, exploring principles of accessibility and user-centered design.</p>
-                <a href="#">Explore the interface...</a>
+                <h2>4. Test Universal Interface</h2>
+                <p>Als nächstes Projekt sollten wir eine Website erstellen, bei der im Hintergrund eine API läuft, über die wir ein Large Language Model abrufen können. Meine Idee für das Projekt war eine Debatte zwischen zwei KIs. Das Projekt funktioniert so, dass eine KI ein Startargument liefert. Danach wird im Hintergrund die Rollenverteilung zwischen KI und Nutzer*in gewechselt: Die KI reagiert auf das eigene Startargument, als wäre es die Aussage des Nutzers, und antwortet entsprechend.
+                    Um die Debatte zu starten, muss der/die Nutzerin zunächst ein Thema auswählen. Man hätte zusätzlich eine Funktion einbauen können, die die Themen bei jedem Neuladen der Seite neu generiert. Allerdings hatte ich Schwierigkeiten, dies technisch umzusetzen.
+                    </p>
+                <a href="https://hbk-bs.github.io/text-the-universal-interface-2mars01/">Explore the interface...</a>
             </section>
 
             <section id="ai-graphic-novel" class="project-section">
-                <h2>4. AI Graphic Novel</h2>
+                <h2>5. AI Graphic Novel</h2>
                 <p>A creative exploration into the use of AI for storytelling. This project combines AI-generated imagery and narrative components to produce a graphic novel. It examines the collaboration between human creativity and artificial intelligence in a visual medium.</p>
-                <a href="#">View the novel...</a>
+                <a href="https://hbk-bs.github.io/a-generative-graphic-novel-team-slym-shady/">den Graphic Novel durchlesen</a>
+                <a href="https://www.figma.com/board/4AtQbDn0UflPOdyS7e8yWJ/Whats-Wrong-Pr%C3%A4si?node-id=0-1&p=f&t=zjZATkCkRG2puUFf-0">schau dir unsere Präsi für mehr Behind the Scenes an </a>
+            </section>
+            <section id="reflexion" class="project-section">
+                <h2>6. Semesterreflexion</h2>
+                <p>
+                    Im Rahmen des Moduls Grundlagen der digitalen Kommunikation haben wir uns im Sommersemester 2025 vor allem mit künstlicher Intelligenz beschäftigt. In diversen Projekten haben wir uns mit der Google Teachable Machine, Nature of Code von Daniel Shiffman, einer textbasierten Applikation, einer Debatte über KI sowie einem KI-generierten Graphic Novel auseinandergesetzt.
+ 
+                    </p>
+                    <p>Weiter ging es mit der Auseinandersetzung mit Nature of Code. Wir sollten ein natürliches Phänomen mit P5.js nachempfinden. Da wir uns bereits im vorherigen Semester mit P5.js vertraut gemacht hatten, war auch dieses Projekt relativ leicht umzusetzen. Besonders in Zusammenarbeit mit dem KI-Copilot in VS Code fiel mir die Umsetzung sehr leicht. Der Copilot war eine gute Unterstützung und erwies sich als besonders hilfreich, wenn ich mir den generierten Code detailliert erklären ließ. Ein Kritikpunkt an meiner Umsetzung ist, dass die Animation zu nah am natürlichen Phänomen blieb und keine wirklich experimentelle Herangehensweise darstellte.
+                    </p>
+                    <p>Die nächste Aufgabe bestand darin, eine textbasierte Applikation zu entwerfen, mit der man durch Klicken, Texteingaben oder das Einfügen von Bildern interagieren kann. Meine Idee für das Projekt war eine Debatte zwischen zwei KIs. Derdie Nutzerin kann eines von drei vorab festgelegten Themen auswählen, über das die beiden KIs diskutieren sollen. Das Projekt nutzt einen API-Key, der den Zugriff auf ein Large Language Model ermöglicht. Sich mit den „Behind the Scenes“ der LLMs auseinanderzusetzen war interessant, allerdings sind meine Fähigkeiten in diesem Bereich noch ausbaufähig.</p>
+                    <p>Zum Ende des Semesters beschäftigten wir uns noch ausführlicher mit KI. Wir führten eine Pro- und Kontra-Debatte über künstliche Intelligenz und erstellten als finales Projekt einen Graphic Novel, der von einer KI generiert wurde. Das Erzeugen der Bilder stellte sich als schwieriger heraus, als gedacht. Es erfordert deutlich mehr Können, einen sinnvollen Prompt zu verfassen, der zu einem zufriedenstellenden Ergebnis führt, als ich anfangs angenommen hatte. Ein Hindernis war vor allem die Kontinuität der Charaktere. Es war sehr herausfordernd, einen einheitlichen Stil zu generieren, was teilweise zu Frustration führte. Letztendlich entstand jedoch eine Auswahl vieler Ergebnisse, unter denen auch einige für das Projekt geeignete Bilder waren.
+                    </p>
+                    <p>Die Arbeit mit Midjourney hat mich von meinem anfänglichen Gedanken, dass das Erstellen von Bildern mittels Prompts keine große Herausforderung sei, abgebracht. Obwohl ich das Tool äußerst faszinierend finde, bin ich eher abgeneigt, KI in künftigen Projekten intensiv zu nutzen. Sicherlich kann KI als Hilfsmittel zur Recherche sehr hilfreich sein, jedoch machen mir vor allem die Auswirkungen auf die Umwelt – wie der enorme Wasser- und Energieverbrauch – schwer, mich vollständig auf LLMs einzulassen.
+                    </p>
+                    <p>Das Sommersemester 2025 war ein interessanter Einstieg in die Welt der künstlichen Intelligenz und hat mir gezeigt, wie wenig Wissen ich bisher über Large Language Models habe. Wie viel von diesem neu gewonnenen Wissen ich in meiner weiteren Zeit als Designstudentin nutzen werde, wird sich noch zeigen. Trotzdem bin ich dankbar, dass ich diese Erfahrungen machen und diese Projekte umsetzen durfte.
+                    </p>
+               
             </section>
         </main>
     </div>
