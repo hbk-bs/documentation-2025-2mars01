@@ -2,8 +2,9 @@
 
 /* 1. CSS Variables for easy theme customization */
 :root {
-    --primary-color: #2c3e50; /* Dark Blue/Grey */
-    --secondary-color: #3498db; /* Bright Blue */
+    --primary-color: #2c3e50; 
+    
+    --secondary-color: #2c3e50; 
     --background-color: #ecf0f1; /* Light Grey */
     --surface-color: #ffffff; /* White */
     --text-color: #34495e; /* Dark Grey */
@@ -43,9 +44,11 @@ h2 {
 a {
     color: var(--secondary-color);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover {
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
@@ -53,6 +56,30 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: var(--border-radius);
+    margin-top: 1rem;
+}
+
+/* New styling for links to look like buttons */
+.project-section a {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--surface-color);
+    padding: 12px 24px;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-section a:hover {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 /* 3. Main Layout & Header */
@@ -80,28 +107,30 @@ header {
     transition: transform 0.2s ease-in-out;
 }
 
-.project-section:hover {
-    transform: translateY(-5px);
-}
 
-/* Optional: Unique accent colors for each topic */
-#nature-of-code {
-    border-left: 5px solid #27ae60; /* Green */
-}
+
 
 #teachable-machines {
-    border-left: 5px solid #f39c12; /* Orange */
+    border-left: 5px solid #2c3e50; /* Orange */
+}
+/* Optional: Unique accent colors for each topic */
+#nature-of-code {
+    border-left: 5px solid #2c3e50e5; /* Green */
 }
 
 #universal-interface {
-    border-left: 5px solid #8e44ad; /* Purple */
+    border-left: 5px solid #2c3e50c4; /* Purple */
 }
-
+#debate-club {
+    border-left: 5px solid #2c3e509b; /* Red */
+}
 #ai-graphic-novel {
-    border-left: 5px solid #c0392b; /* Red */
+    border-left: 5px solid #2c3e5074 ; /* Red */
 }
 
-
+#reflexion {
+        border-left: 5px solid #2c3e5050; /* Red */
+}
 /* 5. Responsive Adjustments for larger screens */
 @media (min-width: 768px) {
     h1 {
