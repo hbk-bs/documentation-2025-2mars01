@@ -152,3 +152,16 @@ header {
         margin-bottom: 0; /* Reset margin as gap is used */
     }
 }
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center the image within the footer */
+    padding: 2rem 0;   /* Add some space above and below the footer */
+    margin-top: 2rem;
+    font-size: 0.9rem; /* Adjust this value to change the text size */
+}
+
+footer img {
+    width: 50px;  /* Set your desired width */
+    height: auto; /* Keeps the image aspect ratio correct */
+}
